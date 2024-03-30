@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1557683316-973673baf926');
+    background-size: cover;
+    padding: 10px;  
+}
+
+.header > h1 {
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
+    gap: 20px;
+
+}
+
+.card {
+    display: inline;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+
+.card-body {
+    padding: 20px;
+}
+
+
+
+.card-text {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.card-footer {
+    display: flex;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+}
+
+.card-footer a {
+    color: crimson;
+    text-decoration: none;
+}
+
+.card-footer a:hover {
+    text-decoration: underline;
+}
+
+.card-footer a:first-child {
+    margin-right: auto;
+}
+
+.card-footer a:last-child {
+    margin-left: auto;
+}
+
+.card-footer a i {
+    margin-right: 5px;
+}
+
+.card-footer a i.fa-heart {
+    color: crimson;
+}
+
+.card-footer a i.fa-heart:hover {
+    color: red;
+}
+
+.card-footer a i.fa-comment {
+    color: #333;
+}
+
+
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: crimson;
+}
+
+.header {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.header p {
+    color: #fff;
+    text-decoration: none;
+    margin: auto 10px;
+    justify-self: baseline;
+}

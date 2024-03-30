@@ -1,0 +1,26 @@
+@include media-breakpoint-up(sm) {
+    .custom-class {
+      display: block;
+    }
+}
+
+@include row-cols(3);
+// Five columns from medium breakpoint up
+@include media-breakpoint-up(md) 
+{
+    @include row-cols(5);
+}
+
+// Six columns from large breakpoint up
+
+@include media-breakpoint-up(lg) {
+    @include row-cols(6);
+}
+
+@include media-breakpoint-up(xl) {
+    @include row-cols(4);
+}
+ 
+@include media-breakpoint-up(xxl) {
+    @include row-cols(3);
+}
